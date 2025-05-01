@@ -46,14 +46,12 @@ python spamModels.py
 
 #Run ensemble approach training and evaluation script
 python ensemble.py
-
 ```
 
 To execute the web app install streamlit library
 
 ```
 pip install streamlit
-
 ```
 
 To run the app type the following commnad
