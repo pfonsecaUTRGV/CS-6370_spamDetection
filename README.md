@@ -62,3 +62,5 @@ streamlit run 6370_spam_app.py
 
 The app will be automatically open on http://localhost:8501 on the default browser
 
+spam_detector.plk & spam_ensemble.plk are the files that store the trained models. These files are needed to run the webapp.
+
