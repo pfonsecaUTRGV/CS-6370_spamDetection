@@ -28,7 +28,7 @@ models = {
     "Logistic Regression": LogisticRegression(max_iter=1000),
     "Naive Bayes": MultinomialNB(),
     "Random Forest": RandomForestClassifier(),
-    "SVM": SVC()
+    "SVM": SVC(probability=True)
 }
 
 # Build and evaluate pipelines
