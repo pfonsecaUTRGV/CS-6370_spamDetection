@@ -17,9 +17,12 @@ if st.button("Detect Spam"):
         st.warning("Please enter some text.")
     else:
         prediction = model.predict([email_input])[0]
+        proba = model.predict_proba([email_input])[0]
+        confidence = proba[prediction]
         label = "Spam" if prediction == 1 else "Not Spam"
         if prediction ==1:
             st.warning(f"Email: {label}")
         else:
             st.success(f"Email: {label}")
+        st.info(f"Confidence: {confidence:.2%}")
 
